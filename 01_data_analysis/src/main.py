@@ -21,7 +21,7 @@ print("\nVerificar valores nulos")
 print(df.isnull().sum())
 
 plt.figure(figsize=(10,6))
-sns.histplot(df['Price'], kde=True, bins=30) #Substitua o 'column_name' pela coluna que deseja.
+sns.histplot(df['column_name'], kde=True, bins=30) #Substitua o 'column_name' pela coluna que deseja.
 plt.title('Distribuição da Coluna Price')
 plt.xlabel("Valores")
 plt.ylabel("Frequencia")
@@ -29,7 +29,7 @@ plt.show()
 
 # 2. Gráfico de barras para uma variável categórica
 plt.figure(figsize=(10, 6))
-df['High'].value_counts().plot(kind='bar')  # Substitua 'column_category' por uma coluna categórica válida
+df['column_category'].value_counts().plot(kind='bar')  # Substitua 'column_category' por uma coluna categórica válida
 plt.title('Frequência por Categoria')
 plt.xlabel('Categorias')
 plt.ylabel('Frequência')
